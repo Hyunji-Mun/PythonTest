@@ -7,16 +7,16 @@ from selenium.webdriver.support import expected_conditions as EC
 # Appium 서버와 통신하기 위한 Desired Capabilities 설정
 options = AppiumOptions()
 options.load_capabilities({
-    "platformName": "Android",
-    "appium:platformVersion": "14",
-    "appium:deviceName": "R3CR5062Q0J",
-    "appium:automationName": "uiautomator2",
-    "appium:ensureWebviewsHavePages": True,
-    "appium:nativeWebScreenshot": True,
-    "appium:newCommandTimeout": 3600,
-    "appium:connectHardwareKeyboard": True,
-    "appium:appPackage": "com.android.chrome",
-    "appium:appActivity": "com.google.android.apps.chrome.Main"
+    "platformName": "Android",  # 플랫폼 이름 (Android)
+    "appium:platformVersion": "14",  # 플랫폼 버전 (예: 14)
+    "appium:deviceName": "R3CR5062Q0J",  # 기기 이름 또는 ID
+    "appium:automationName": "uiautomator2",  # 자동화 엔진 (UIAutomator2)
+    "appium:ensureWebviewsHavePages": True,  # WebView 페이지 확인
+    "appium:nativeWebScreenshot": True,  # 기본 스크린샷 사용
+    "appium:newCommandTimeout": 3600,  # 명령 타임아웃 (초)
+    "appium:connectHardwareKeyboard": True,  # 하드웨어 키보드 사용
+    "appium:appPackage": "com.android.chrome",  # 앱 패키지 (Chrome)
+    "appium:appActivity": "com.google.android.apps.chrome.Main"  # 앱 메인 액티비티
 })
 
 # Appium 서버에 연결
